@@ -10,16 +10,24 @@ const HomeScreen = () => {
     }
 
     const pokemon = usePokemon()
+    const [value, setValue] = useState('')
     const [search, setSearch] = useState('')
 
+    const handleSubmit = (e) => {
+        if (e.key === "Enter") {
+            setSearch(value)
+        }
+    }
 
     return (
         <div>
             <input 
             placeholder='Search Pokemon' 
             className={styles.input}
-            onChange = {(e) => setSearch(e.target.value)}
+            value={value}
+            onChange = {(e) => setValue(e.target.value)}
             autoComplete="off"
+            onKeyDown={handleSubmit}
             />
             
             <div className={styles.container}>
