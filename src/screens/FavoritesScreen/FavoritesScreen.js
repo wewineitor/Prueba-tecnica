@@ -6,7 +6,7 @@ const FavoritesScreen = () => {
     return (
         <>
         {
-            favorites.length === 0 ? <h1>No tienes favoritos en tu lista</h1>: 
+            favorites.length === 0 ? <h1>You do not have favorites in your list</h1>: 
             <div className={styles.container}>
                 {
                     favorites.map(fav => (

@@ -1,23 +1,9 @@
-import { useState } from 'react'
 import Card from '../../components/Card'
-import usePokemon from "../../hooks/usePokemon"
+import useHome from '../../hooks/useHome'
 import styles from './HomeScreen.module.css'
 
 const HomeScreen = () => {
-
-    if(localStorage.getItem('favorites') === null) {
-        localStorage.setItem('favorites', JSON.stringify([]))
-    }
-
-    const pokemon = usePokemon()
-    const [value, setValue] = useState('')
-    const [search, setSearch] = useState('')
-
-    const handleSubmit = (e) => {
-        if (e.key === "Enter") {
-            setSearch(value)
-        }
-    }
+    const [pokemon, value, setValue, search, handleSubmit] = useHome()
 
     return (
         <div>
