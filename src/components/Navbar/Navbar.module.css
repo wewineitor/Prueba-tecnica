@@ -1,0 +1,56 @@
+header {
+    background: #1abc9c;
+    width: 100%;
+}
+header nav ul {
+    list-style: none;
+    text-align: center;
+}
+header nav ul li {
+    display: inline-block;
+    padding: 1rem;
+}
+header nav ul li a{
+    text-decoration: none;
+    padding: 1rem;
+    font-size: 1.5em;
+    color: #000;
+}
+header nav ul li a:hover {
+    background: #16a085;
+}
+.show_menu {
+    display: none;
+    cursor: pointer;
+}
+.menu_input {
+    display: none;
+}
+
+/*Media Queries*/
+@media (max-width: 932px) {
+    #logo {
+        width: 100vw;
+        height: 40vh;
+    }
+    header nav label {
+        text-align:left;
+        font-size: 3em;
+    }
+    header nav ul li{
+        padding: 0;
+        display: none;
+    }
+    .show_menu {
+        display: block;
+    }
+    .menu_input:checked + nav ul li{
+        display: flex;
+    }
+}
+
+@media (max-width: 293px) {
+    header nav ul li a{
+        font-size: 1em;
+    }
+}

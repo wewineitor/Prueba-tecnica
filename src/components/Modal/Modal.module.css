@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 10%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 90%;
+    height: 450px;
+    margin: auto;
+    border: solid 1px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.type {
+    width: 60%;
+    margin: auto;
+    border-radius: 10px;
+    font-weight: 600;
+}
