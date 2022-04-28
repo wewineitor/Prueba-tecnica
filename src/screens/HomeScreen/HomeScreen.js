@@ -25,9 +25,9 @@ const HomeScreen = () => {
             <div className={styles.container}>
                 {
                     search === '' ? 
-                    pokemon !== null ? pokemon.map(poke => (<Card key={poke.name} name={poke.name} />)) : null
+                    pokemon !== null ? pokemon.map(poke => (<Card key={poke.name.trim().toLowerCase()} name={poke.name.trim().toLowerCase()} />)) : null
                     :
-                    <Card name={search.trim()} />
+                    <Card name={search.trim().toLowerCase()} />
                 }
                 
             </div>
