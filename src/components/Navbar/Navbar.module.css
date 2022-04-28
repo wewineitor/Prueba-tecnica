@@ -29,10 +29,6 @@ header nav ul li a:hover {
 
 /*Media Queries*/
 @media (max-width: 932px) {
-    #logo {
-        width: 100vw;
-        height: 40vh;
-    }
     header nav label {
         text-align:left;
         font-size: 3em;
