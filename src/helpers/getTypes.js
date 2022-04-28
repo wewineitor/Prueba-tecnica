@@ -2,7 +2,7 @@
 Este metodo obtiene los colores para cada tipo de pokemon para asi darle
 mas personalidad a los cards y la informacion
 
-NOTA: Las referencias de los colores los obtuve de internet
+NOTA: Los colores los base en una tabla que encontre por internet
 */
 const getTypes = () => {
     return {
